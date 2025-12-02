@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Microservice Decomposition Metrics</title>
+    <link rel="stylesheet" href="/framelab-artifacts/style-44037f4f30fec9dc.css" integrity="sha384-N1VrP1KZbEFaOa2yXKmmWPeOWhc0LxEr4dtDAMPQVZu3Cyohmlq2qYPfDsqhFnkQ"/>
+    <link rel="stylesheet" href="/framelab-artifacts/filter_tree-563bdce3606964d4.css" integrity="sha384-WsfVMSFLLKdW5hTW8BFJ9e8hc+py+oGFYWlOWSN1WUbkwce7SCksJQG75h+9TcUF"/>
+    
+<link rel="modulepreload" href="/framelab-artifacts/web-visualization-5ae79f40b7f3e280.js" crossorigin="anonymous" integrity="sha384-TdhNyfcSrG9KrG+vAF7paihSlIeL+Ng7hKDO5Q+nh9S3K1gYhwxLHKSr4dqj+DO5"><link rel="preload" href="/framelab-artifacts/web-visualization-5ae79f40b7f3e280_bg.wasm" crossorigin="anonymous" integrity="sha384-BpbzkGpst3nZ2Lh+qaHHq4l6YYdhdFIr9AbpjU0tqAb26l39SptralPjpGCLa5EZ" as="fetch" type="application/wasm"></head>
+<body>
+    <main id="app"></main>
+
+<script type="module">
+import init, * as bindings from '/framelab-artifacts/web-visualization-5ae79f40b7f3e280.js';
+const wasm = await init({ module_or_path: '/framelab-artifacts/web-visualization-5ae79f40b7f3e280_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
